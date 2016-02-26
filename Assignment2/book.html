@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+  <!-- Website Title & Description for Search Engine purposes -->
+  <title>Movie Play</title>
+  <meta name="description" content="">
+
+  <!-- Mobile viewport optimized -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- favicon-->
+  <link rel="shortcut icon" type="image/x-icon" href="images/wind.jpg" />
+  <!--end-->
+  <!-- Include Modernizr in the head, before any other Javascript -->
+  <script src="lib/js/modernizr-2.6.2.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <!-- My Custom CSS -->
+  <link href="includes/css/styles.css" rel="stylesheet">
+  <!-- font api-->
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Passion+One' rel='stylesheet' type='text/css'>
+  <!--font-->
+  <!-- font awesom api-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!--end -->
+</head>
+<body>
+
+  <div class="container" id="main">
+    <div class="navbar navbar-fixed-top" id="transparentNav">
+      <div class="container">
+        <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="images/logo.png" alt="Logo"></a>
+        <div class="nav-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="active">
+              <a href="#">Book</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Location <strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Bangalore</a></li>
+                <li><a href="#">Hyderabad</a></li>
+                <li><a href="#">Kolkata</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul><!--end navbar ul-->
+          <form class="navbar-form pull-left">
+            <input type="text" class="form-control" placeholder="Search" id="searchText">
+            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+          </form><!--end navbar form-->
+          <ul class="nav navbar-nav pull-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"> My Account<strong class="caret"></strong></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><span class="glyphicon glyphicon-refresh"></span> Profile Update</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Setting</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--end collpase navbar-->
+      </div><!--end nav container -->
+    </div><!-- end navbar-->
+    <div class="row booking">
+      <div class="col-sm-3">
+        <div class="panel mybookpanel">
+          <div class="panel-heading mybookpanelHeading">
+            <h3 class="panel-title bookheading">Movie 1</h3>
+          </div><!-- end panel-heading -->
+          <img src="images/feature1.jpg" class="img-responsive" alt="movie1">
+          <div class="book-tag">Ticket Price &nbsp;&nbsp;<h4 class="label label-danger  price"><span class="glyphicon glyphicon-tag"></span> <sup><i class="fa fa-rupee"></i></sup>180/-</h4></div>
+          <div class="book-tag">Popularity&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span></div>
+          <p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+          <a href="#" class="btn btn-success btn-block">BOOK</a>
+        </div><!-- end panel -->
+      </div><!-- end feature -->
+      <div class="col-sm-3">
+        <div class="panel mybookpanel">
+          <div class="panel-heading mybookpanelHeading">
+            <h3 class="panel-title bookheading">Movie 2</h3>
+          </div><!-- end panel-heading -->
+          <img src="images/feature2.jpg" class="img-responsive" alt="movie 2">
+          <div class="book-tag">Ticket Price &nbsp;&nbsp;<h4 class="label label-danger  price"><span class="glyphicon glyphicon-tag"></span> <sup><i class="fa fa-rupee"></i></sup>180/-</h4></div>
+          <div class="book-tag">Popularity&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span></div>
+          <p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+          <a href="#" class="btn btn-success btn-block">BOOK</a>
+        </div><!-- end panel -->
+      </div><!-- end feature -->
+
+      <div class="col-sm-3">
+        <div class="panel mybookpanel">
+          <div class="panel-heading mybookpanelHeading">
+            <h3 class="panel-title bookheading">Movie 3</h3>
+          </div><!-- end panel-heading -->
+          <img src="images/feature3.jpg" class="img-responsive" alt="Movie 3">
+          <div class="book-tag">Ticket Price &nbsp;&nbsp;<h4 class="label label-danger  price"><span class="glyphicon glyphicon-tag"></span> <sup><i class="fa fa-rupee"></i></sup>180/-</h4></div>
+          <div class="book-tag">Popularity&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span></div>
+          <p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+          <a href="#" class="btn btn-success btn-block">BOOK</a>
+        </div><!-- end panel -->
+      </div><!-- end feature -->
+      <div class="col-sm-3">
+        <div class="panel mybookpanel">
+          <div class="panel-heading mybookpanelHeading">
+            <h3 class="panel-title bookheading">Movie 2</h3>
+          </div><!-- end panel-heading -->
+          <img src="images/feature2.jpg" class="img-responsive" alt="movie 2">
+          <div class="book-tag">Ticket Price &nbsp;&nbsp;<h4 class="label label-danger  price"><span class="glyphicon glyphicon-tag"></span> <sup><i class="fa fa-rupee"></i></sup>180/-</h4></div>
+          <div class="book-tag">Popularity&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span></div>
+          <p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+          <a href="#" class="btn btn-success btn-block">BOOK</a>
+        </div><!-- end panel -->
+      </div><!-- end feature -->
+    </div><!-- end features-->
+    <div id="spec" class="row booking " >
+      <div class="col-sm-3">
+        <div class="panel mybookpanel">
+          <div class="panel-heading mybookpanelHeading">
+            <h3 class="panel-title bookheading">Movie 1</h3>
+          </div><!-- end panel-heading -->
+          <img src="images/feature1.jpg" class="img-responsive" alt="movie1">
+          <div class="book-tag">Ticket Price &nbsp;&nbsp;<h4 class="label label-danger  price"><span class="glyphicon glyphicon-tag"></span> <sup><i class="fa fa-rupee"></i></sup>180/-</h4></div>
+          <div class="book-tag">Popularity&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span></div>
+          <p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+          <a href="#" class="btn btn-success btn-block">BOOK</a>
+        </div><!-- end panel -->
+      </div><!-- end feature -->
+      <div class="col-sm-3">
+        <div class="panel mybookpanel">
+          <div class="panel-heading mybookpanelHeading">
+            <h3 class="panel-title bookheading">Movie 2</h3>
+          </div><!-- end panel-heading -->
+          <img src="images/feature2.jpg" class="img-responsive" alt="movie 2">
+          <div class="book-tag">Ticket Price &nbsp;&nbsp;<h4 class="label label-danger  price"><span class="glyphicon glyphicon-tag"></span> <sup><i class="fa fa-rupee"></i></sup>180/-</h4></div>
+          <div class="book-tag">Popularity&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span></div>
+          <p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+          <a href="#" class="btn btn-success btn-block">BOOK</a>
+        </div><!-- end panel -->
+      </div><!-- end feature -->
+
+      <div class="col-sm-3 ">
+        <div class="panel mybookpanel">
+          <div class="panel-heading mybookpanelHeading">
+            <h3 class="panel-title bookheading">Movie 3</h3>
+          </div><!-- end panel-heading -->
+          <img src="images/feature3.jpg" class="img-responsive" alt="Movie 3">
+          <div class="book-tag">Ticket Price &nbsp;&nbsp;<h4 class="label label-danger  price"><span class="glyphicon glyphicon-tag"></span> <sup><i class="fa fa-rupee"></i></sup>180/-</h4></div>
+          <div class="book-tag">Popularity&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span></div>
+          <p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+          <a href="#" class="btn btn-success btn-block">BOOK</a>
+        </div><!-- end panel -->
+      </div><!-- end feature -->
+      <div class="col-sm-3">
+        <div class="panel mybookpanel">
+          <div class="panel-heading mybookpanelHeading">
+            <h3 class="panel-title bookheading">Movie 2</h3>
+          </div><!-- end panel-heading -->
+          <img id="movie2" src="images/feature2.jpg" class="img-responsive" alt="movie 2">
+          <div class="book-tag">Ticket Price &nbsp;&nbsp;<h4 class="label label-danger  price"><span class="glyphicon glyphicon-tag"></span> <sup><i class="fa fa-rupee"></i></sup>180/-</h4></div>
+          <div class="book-tag">Popularity&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span></div>
+          <p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+          <a href="#" class="btn btn-success btn-block">BOOK</a>
+        </div><!-- end panel -->
+      </div><!-- end feature -->
+    </div><!-- end features-->
+    <nav>
+        <ul class="pager">
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+    </nav>
+    </div> <!--end container-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6" id="aboutus">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div><!-- end col-sm-4 -->
+
+          <div class="col-sm-3">
+            <h3>Site Map</h3>
+            <ul class="footer-comp">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Links</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div><!-- end col-sm-2 -->
+
+          <div class="col-sm-3">
+            <h3>Follow Us</h3>
+            <ul class="footer-comp" id="followus">
+              <li><a href="#"><i class="fa fa-twitter fa"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus fa"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook-square fa"></i></a></li>
+            </ul>
+          </div><!-- end col-sm-2 -->
+        </div><!-- end row -->
+        <hr>
+        <div class="row">
+          <div class="col-sm-12">
+            <h6>Copyright &copy; 2016 Movie Play. All Right Reserved</h6>
+          </div>
+        </div>
+      </div><!-- end container -->
+    </footer> <!--- footer end here-->
+
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>window.jQuery || document.write('<script src="lib/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+    <!-- Bootstrap JS -->
+    <script src="lib/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="includes/js/script.js"></script>
+
+  </body>
+  </html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<!-- Website Title & Description for Search Engine purposes -->
+	<title>Movie Play</title>
+	<meta name="description" content="">
+
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- favicon-->
+	<!--end-->
+	<!-- Bootstrap CSS -->
+	<link href="lib/css/bootstrap.min.css" rel="stylesheet">
+	<link href="lib/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="lib/js/modernizr-2.6.2.min.js"></script>
+	<!-- Custom CSS -->
+	<link href="includes/css/styles.css" rel="stylesheet">
+	<!-- font api-->
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Passion+One' rel='stylesheet' type='text/css'>
+	<!--font-->
+	<!-- font awesom api-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!--end -->
+</head>
+<body>
+
+	<div class="container" id="main">
+		<div class="navbar navbar-fixed-top" id="transparentNav">
+			<div class="container">
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="images/logo.png" class="img-responsive" alt="Logo"></a>
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="book.html">Book</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Location <strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Bangalore</a></li>
+								<li><a href="#">Hyderabad</a></li>
+								<li><a href="#">Kolkata</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+					</ul><!--end navbar ul-->
+					<form class="navbar-form pull-left">
+						<input type="text" class="form-control" placeholder="Search" id="searchText">
+						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+					</form><!--end navbar form-->
+					<ul class="nav navbar-nav pull-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"> My Account<strong class="caret"></strong></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><span class="glyphicon glyphicon-refresh"></span> Profile Update</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Setting</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--end collpase navbar-->
+			</div><!--end nav container -->
+		</div><!-- end navbar-->
+		<div class="carousel slide" id="myCarousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				<li data-slide-to="1" data-target="#myCarousel"></li>
+				<li data-slide-to="2" data-target="#myCarousel"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+					<div class="carousel-caption">
+						<h4>Movie-1</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div><!-- end carousel-caption-->
+				</div><!-- end item -->
+
+				<div class="item" id="slide2">
+					<div class="carousel-caption">
+						<h4>Movie 2</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div><!-- end carousel-caption-->
+				</div><!-- end item -->
+
+				<div class="item" id="slide3">
+					<div class="carousel-caption">
+						<h4>Movie 3</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div><!-- end carousel-caption-->
+				</div><!-- end item -->
+			</div><!-- carousel-inner -->
+
+			<!-- Controls -->
+			<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+		</div><!--end myCarousel-->
+		<div class="row" id="bigCollout">
+			<div class="col-12">
+				<div class="alert alert-success alert-block fade in" id="successAlert">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<h4>Success!</h4>
+					<p>Thank you for voting!</p>
+					<div class="progress" id="voting">
+						<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="60"
+						aria-valuemin="0" aria-valuemax="100" style="width:60%">
+						<span class="sr-only">60% people voted this.</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- for small devices well-->
+			<div class="well well-small visible-sm">
+				<a href="#" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span>Phone User</a>
+			</div>
+			<!-- end small devices dell-->
+			<div class="well" id="mywell">
+				<div class="page-header">
+					<h1>Latest Movie&nbsp;&nbsp;&nbsp;<small>Hollywood &amp; Bollywood</small></h1>
+				</div><!--end page-header-->
+
+				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus sagittis magna, venenatis venenatis ipsum pharetra vel.</p>
+				<img src="images/bigcolout.jpg" alt="placeholder" class="thumbnail pull-right img-responsive">
+				<p> Nunc facilisis non turpis ut posuere. Vestibulum odio nisl, vulputate eu nibh sed Nunc facilisis non turpis ut posuere. Vestibulum odio nisl, vulputate eu nibh sed.Nunc facilisis non turpis ut posuere. Vestibulum odio nisl, vulputate eu nibh sed, accumsan blandit enim. In vel porttitor quam. Curabitur dignissim vestibulum lacus sit amet finibus. Donec odio magna, tristique eu vestibulum ac, pharetra nec eros. Sed sit amet hendrerit felis. Mauris nec laoreet ipsum, at sodales lorem. Nam a nibh laoreet, congue enim ac, faucibus nibh. Duis quis ultricies ante. Nunc tincidunt felis semper mattis laoreet. In iaculis luctus luctus. Curabitur ultricies nunc id euismod lobortis.</p>
+				<a href="#" class="btn btn-large btn-primary" id="alertMe">Vote this movie</a>
+				<a href="#" class="btn btn-large btn-link">Imdb rating</a>
+			</div><!--end well-->
+		</div>
+	</div><!--end bigCollout-->
+	<div class="row" id="featuresHeading">
+		<div class="col-12">
+			<h2>More Movies</h2>
+			<p class="lead">Cornhole kitsch Williamsburg pug bicycle rights vegan. Neutra food truck occupy kitsch sustainable.</p>
+		</div><!-- end col-12 -->
+	</div><!-- end featuresHeading -->
+
+
+	<div class="row" id="features">
+		<div class="col-sm-4 feature">
+			<div class="panel mypanel">
+				<div class="panel-heading mypanelHeading">
+					<h3 class="panel-title">Movie 1</h3>
+				</div><!-- end panel-heading -->
+				<img src="images/feature1.jpg" alt="movie1" class="img-circle img-responsive">
+
+				<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+				<button class="btn btn-default btn-circle" disabled="disabled">Drama</button>
+				<button class="btn btn-default btn-circle" disabled="disabled">Action</button>
+				<button class="btn btn-default btn-circle" disabled="disabled">Comedy</button>
+				<a href="#Youtube" role="button" data-toggle="modal" class="btn btn-danger btn-block">WATCH</a>
+			</div><!-- end panel -->
+		</div><!-- end feature -->
+
+		<div class="col-sm-4 feature">
+			<div class="panel mypanel">
+				<div class="panel-heading mypanelHeading">
+					<h3 class="panel-title">Movie 2</h3>
+				</div><!-- end panel-heading -->
+				<img src="images/feature2.jpg" alt="movie 2" class="img-circle img-responsive">
+
+				<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+				<button class="btn btn-default btn-circle" disabled="disabled">Drama</button>
+				<button class="btn btn-default btn-circle" disabled="disabled">Action</button>
+				<button class="btn btn-default btn-circle" disabled="disabled">Comedy</button>
+				<a href="#Youtube" role="button" data-toggle="modal" class="btn btn-danger btn-block">WATCH</a>
+			</div><!-- end panel -->
+		</div><!-- end feature -->
+
+		<div class="col-sm-4 feature">
+			<div class="panel mypanel">
+				<div class="panel-heading mypanelHeading">
+					<h3 class="panel-title">Movie 3</h3>
+				</div><!-- end panel-heading -->
+				<img src="images/feature3.jpg" alt="Movie 3" class="img-circle img-responsive">
+
+				<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+				<button class="btn btn-default btn-circle" disabled="disabled">Drama</button>
+				<button class="btn btn-default btn-circle" disabled="disabled">Action</button>
+				<button class="btn btn-default btn-circle" disabled="disabled">Comedy</button>
+				<a href="#Youtube" role="button" data-toggle="modal" class="btn btn-danger btn-block">WATCH</a>
+
+				<div class="modal fade" id="Youtube">
+					<div class="modal-dialog" id="youtube_modal_dialog">
+						<div class="modal-content" id="youtube_modal_content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title"> Vote for the best movie </h4>
+							</div>
+							<div class="modal-body">
+								<h4>Content of the modal body</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<!-- 16:9 aspect ratio -->
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qfu0L-2YfbE"></iframe>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- end panel -->
+		</div><!-- end feature -->
+	</div><!-- end features -->
+	<div class="row" id="moreInfo">
+		<div class="col-sm-6">
+			<h3>Theatre and Location</h3>
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle="tab">Location</a></li>
+					<li><a href="#tab2" data-toggle="tab">Inox</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="tab1">
+						<h4><span class="glyphicon glyphicon-map-marker"></span> Our Location<small>&nbsp;&nbsp;&nbsp;&nbsp;Find the nearest theatre.</small></h4>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31108.540466402566!2d77.61468279155564!3d12.93549219302431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144ed898fc2d%3A0x1681f38e8c00ae56!2sKoramangala%2C+Bengaluru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1455619951637" width="100%" height="200" frameborder="0" style="border:1px solid black" allowfullscreen></iframe>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<button data-toggle="collapse" data-target="#demo" class="btn btn-small btn-info" id="loc_colapse">More..</button>
+						<div id="demo" class="collapse">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+					</div><!-- first tab pan end-->
+					<div class="tab-pane" id="tab2">
+						<h4>Float left image &nbsp;&nbsp;&nbsp;&nbsp;<small>Popularity in the network.</small></h4>
+						<img src="images/inox.jpg" alt="placeholder" class="thumbnail pull-left img-responsive">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<a href="#mymodal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>&nbsp;See this</a>
+							<hr>
+							<div class="modal fade" id="mymodal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title"> Vote for the best movie </h4>
+										</div>
+										<div class="modal-body">
+											<h4>Content of the modal body</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											<h4>popover in the modal</h4>
+											<a href="#" class="btn  btn-danger pop">Don't click this button</a>
+											<hr>
+											<p class="text-muted"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit</small></p>
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Name</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputName" placeholder="Name" type="text">
+													</div>
+												</div>
+
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+													</div>
+												</div>
+
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+													<div class="col-lg-10">
+														<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+														<button class="btn btn-success pull-right" type="submit">Send!</button>
+													</div>
+												</div>
+											</form><!--form end here-->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!--second tab pan end-->
+					</div><!--end tab content-->
+				</div><!--end tabbable-->
+			</div><!--end col 6-->
+			<div class="col-sm-6">
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default myaccordpanel">
+						<div class="panel-heading accordPanelHeading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">1. Movie1 update</a>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus sagittis magna, venenatis venenatis ipsum pharetra vel.  <a href="#" target="_blank">Learn more.</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default myaccordpanel">
+						<div class="panel-heading accordPanelHeading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapsetwo">2. Movie2 update</a>
+							</h4>
+						</div>
+						<div id="collapsetwo" class="panel-collapse collapse">
+							<div class="panel-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus sagittis magna, venenatis venenatis ipsum pharetra vel.<a href="#" target="_blank">Learn more.</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default myaccordpanel">
+						<div class="panel-heading accordPanelHeading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">3. Movie3 update</a>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse">
+							<div class="panel-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus sagittis magna, venenatis venenatis ipsum pharetra vel.<a href="#" target="_blank">Learn more.</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default myaccordpanel">
+						<div class="panel-heading accordPanelHeading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">4. Movie4 update</a>
+							</h4>
+						</div>
+						<div id="collapseFour" class="panel-collapse collapse">
+							<div class="panel-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus sagittis magna, venenatis venenatis ipsum pharetra vel.<a href="#" target="_blank">Learn more.</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default myaccordpanel">
+						<div class="panel-heading accordPanelHeading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">5. Movie5 update</a>
+							</h4>
+						</div>
+						<div id="collapseFive" class="panel-collapse collapse">
+							<div class="panel-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus sagittis magna, venenatis venenatis ipsum pharetra vel.<a href="#" target="_blank">Learn more.</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end moreInfo-->
+		<div class="row" id="moreCourses">
+			<div class="col-12">
+				<h3>Movies Trailar</h3>
+				<div class="thumbnails row">
+					<div class="col-6">
+						<div class="thumbnail mythumbnail">
+							<img src="images/thumbnail1.jpg" alt="abraham lincoln" class="img-responsive">
+
+							<h4 class="label label-success  price"><span class="glyphicon glyphicon-tag"></span> <sup><i class="fa fa-rupee"></i></sup>180/-</h4>
+
+							<div class="caption">
+								<h3>Abraham Lincoln</h3>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+								<p><a href="#" class="btn btn-primary btn-small" target="_blank">View</a> <a href="#" target="_blank" class="btn btn-small btn-link">Popularity</a></p>
+							</div><!-- end caption -->
+						</div><!-- end thumbnail -->
+					</div><!-- end col-6 -->
+
+					<div class="col-6">
+						<div class="thumbnail mythumbnail">
+							<img src="images/thumbnail2.jpg" alt="abraham lincoln" class="img-responsive">
+
+							<h4 class="label label-info price"><span class="glyphicon glyphicon-tag"></span> Free</h4>
+
+							<div class="caption">
+								<h3>Prometheus</h3>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+								<p><a href="#" class="btn btn-primary btn-small" target="_blank">View</a> <a href="#" target="_blank" class="btn btn-small btn-link">Popularity</a></p>
+							</div><!-- end caption -->
+						</div><!-- end thumbnail -->
+					</div><!-- end col-6 -->
+				</div><!-- end row -->
+			</div><!-- end col-12 -->
+		</div><!-- end moreCourses-->
+	</div><!--end container-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6" id="aboutus">
+					<h3>About Us</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div><!-- end col-sm-4 -->
+
+				<div class="col-sm-3">
+					<h3>Site Map</h3>
+					<ul class="footer-comp">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Links</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div><!-- end col-sm-2 -->
+
+				<div class="col-sm-3">
+					<h3>Follow Us</h3>
+					<ul class="footer-comp" id="followus">
+						<li><a href="#"><i class="fa fa-twitter fa"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus fa"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook-square fa"></i></a></li>
+					</ul>
+				</div><!-- end col-sm-2 -->
+			</div><!-- end row -->
+			<hr>
+			<div class="row">
+				<div class="col-sm-12">
+					<h6>Copyright &copy; 2016 Movie Play. All Right Reserved</h6>
+				</div>
+			</div>
+		</div><!-- end container -->
+	</footer> <!--- footer end here-->
+
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+	<!-- First the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS -->
+	<script src="lib/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+
+</body>
+</html>

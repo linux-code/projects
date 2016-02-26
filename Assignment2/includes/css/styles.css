@@ -1,0 +1,352 @@
+/*
+
+My Custom CSS
+*/
+/*
+-----------------------------------------
+html
+-----------------------------------------*/
+body,#transparentNav{
+    background: url("../../images/bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+.modal-content{
+  background-color: rgba(51, 42, 33, 0.97);
+}
+.modal-title{
+  color:#C0C0C0;
+}
+.modal-body h4{
+  color:#C0C0C0;
+}
+
+/*navbar head* start*/
+.navbar-nav>.open>a, .navbar-nav>.open>a:hover, .navbar-nav>.open>a:focus,.navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus,.dropdown-menu {
+  color: #678C6B;
+  background-color: #5A1919;
+}
+.dropdown-menu>li>a{
+  color:white;
+}
+/* end*/
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+   #bigCollout{
+     margin-top:0px;
+   }
+   #main{
+     box-shadow: 0 0 30px #000000;
+   }
+   #featuresHeading{
+     background-color:rgba(0, 0, 0, 0.3);
+     position:relative;
+     margin-left:0px;
+     margin-right:0px;
+   }
+   #featuresHeading h2{
+     color:#C0C0C0;
+   }
+   #featuresHeading p{
+     color:#C0C0C0;
+     font-family: 'Indie Flower', cursive;
+   }
+   #features{
+     background-color: rgba(0, 0, 0, 0.5);
+     margin:0 0  0;
+     text-align: center;
+
+  }
+  #features img{
+    margin: 0 0 10px;
+  }
+  .mypanel p{
+    color:#C0C0C0;
+  }
+  #mywell img{
+    margin-left: 10px;
+  }
+  .mypanel,.mypanelHeading{
+    background-color:rgba(0, 0, 0, 0.3);
+  }
+  .mybookpanel{
+    background-color:rgba(0, 0, 0, 0.3);
+    border:0;
+  }
+  .mybookpanelHeading{
+    background-color: brown;
+    border:0;
+  }
+  .mybookpanel p{
+    color:white;
+  }
+  #moreInfo{
+    background-color:rgba(0, 0, 0, 0.5);
+    position:relative;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #moreInfo,.mypanelHeading h3{
+    color:#C0C0C0;
+  }
+  #tab1,#tab2 p{
+    text-align: justify;
+    color:#C0C0C0;
+  }
+  #voting{
+    width:300px;
+    margin-top: 10px;
+  }
+  .btn-circle{
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #searchText{
+    background-color: transparent;
+    color: green;
+  }
+  #inputMessage{
+    margin-bottom: 10px;
+
+  }
+  #mymodal{
+    background-color: rgba(0, 0, 0, 0.3);
+    height:100%;
+  }
+  #moreCourses{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px 0 0;
+  }
+  #moreCourses h3{
+    color:#C0C0C0;
+    text-shadow: 2px 2px black;
+    font-family: 'Passion One', cursive;
+  }
+  .mythumbnail{
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .mythumbnail p{
+    color:#C0C0C0;
+  }
+  footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    margin:10px 0 0;
+    color:#C0C0C0;
+    font-size: 15px;
+    padding:20px;
+
+  }
+  #aboutus{
+    text-align: justify;
+  }
+  #loc_colapse{
+    margin-bottom: 5px;
+  }
+  .myaccordpanel,.accordPanelHeading{
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  #accordPanelHeading{
+    text-align: center;
+    color: #C0C0C0;
+  }
+  .panel-title a{
+    color: #C0C0C0;
+  }
+  #Youtube{
+    width:100%;
+    height:100%;
+  }
+  #youtube_modal_dialog{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  #youtube_modal_content{
+    height: 100%;
+  }
+  .embed-responsive-item{
+    width:60%;
+    height:300px;
+  }
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+   .well{
+     background-color: rgba(0, 0, 0, 0.3);
+   }
+   .well .page-header{
+     margin-top:0px;
+   }
+   .well .page-header h1{
+     margin-top:0px;
+     color:#C0C0C0;
+
+   }
+   .well p.lead,.well p{
+     color:yellow;
+     font-family: 'Indie Flower', cursive;
+     font-size: 30px;
+     text-align: justify;
+   }
+   .well p{
+     font-size: 24px;
+     color:#C0C0C0;
+   }
+   .tabbable img.thumbnail{
+     margin:0 10px 10px 0;
+   }
+   ul.footer-comp{
+     list-style: none;
+     padding: 0;
+   }
+   #followus li{
+     display: inline;
+      font-size: 24px;
+   }
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   #searchText{
+     width:300px;
+     margin-left: 100px;
+   }
+   .navbar-brand{
+     padding:13px 15px;
+   }
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+   #myCarousel{
+     margin-top: 60px;
+     border-style: ridge;
+     border-color: white;
+
+   }
+   .carousel-caption{
+     font-size: 24px;
+   }
+   .carousel-caption h4{
+     font-size:32px;
+     text-shadow: 2px 2px #FF0000
+   }
+  #myCarousel .item{
+    height:400px;
+  }
+  #slide1{
+    background: url('../../images/movie_1_medium.jpg') top left no-repeat;
+  }
+  #slide2{
+    background: url('../../images/movie_2_medium.jpg') top left no-repeat;
+  }
+  #slide3{
+    background: url('../../images/movie_3_medium.jpg') top left no-repeat;
+  }
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+   .alert{
+     margin-top:20px;
+     display:none;
+   }
+   .in{
+     margin-bottom:20px;
+   }
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  #myCarousel .item{
+    height:310px;
+  }
+  #slide1{
+    background: url('../../images/movie_1_small.jpg') top left no-repeat;
+  }
+  #slide2{
+    background: url('../../images/movie_2_small.jpg') top left no-repeat;
+  }
+  #slide3{
+    background: url('../../images/movie_3_small.jpg') top left no-repeat;
+  }
+  .carousel-caption{
+    font-size: 16px;
+  }
+  .carousel-caption h4{
+    font-size:22px;
+    text-shadow: 2px 2px #FF0000
+  }
+  #searchText{
+    width:100px;
+    margin-left: 10px;
+  }
+  .embed-responsive-item{
+    width:60%;
+    height:100px;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  #myCarousel .item{
+    height:502px;
+  }
+  #slide1{
+    background: url('../../images/movie_1_large.jpg') top left no-repeat;
+  }
+  #slide2{
+    background: url('../../images/movie_2_large.jpg') top left no-repeat;
+  }
+  #slide3{
+    background: url('../../images/movie_3_large.jpg') top left no-repeat;
+  }
+}
+/*icon style */
+/* icon end */
+/* booking page style*/
+.booking{
+  margin:100px 0 0 ;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.booking img{
+  margin:0;
+}
+h3.bookheading{
+  color:white;
+}
+#spec{
+  margin-top:10px;
+}
+.pager li>a{
+  background-color:#d9534f;
+  border:1px solid #1764A2;
+}
+.pager li>a:hover{
+  background-color:#1764A2;
+  color:white;
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+.book-tag{
+  margin-top:10px;
+  color:white;
+  padding-right:5px;
+  padding-left: 0;
+  padding-bottom:5px;
+}
+.glyphicon-heart{
+  color:red;
+}
+/*End */

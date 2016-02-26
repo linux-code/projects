@@ -1,0 +1,107 @@
+/*
+-----------------------------------------
+html
+-----------------------------------------*/
+body,#transparentNav{
+    background: url("../../images/bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+/*navbar head* start*/
+.navbar-nav>.open>a, .navbar-nav>.open>a:hover, .navbar-nav>.open>a:focus,.navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus,.dropdown-menu {
+  color: #678C6B;
+  background-color: #5A1919;
+}
+.dropdown-menu>li>a{
+  color:white;
+}
+/* end*/
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+   #main{
+     box-shadow: 0 0 30px #000000;
+   }
+  #moreInfo{
+    background-color:rgba(0, 0, 0, 0.5);
+    position:relative;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 80px;
+    color:#C0C0C0;
+  }
+  #inputMessage{
+    margin-bottom: 10px;
+
+  }
+
+   #searchText{
+     width:300px;
+     margin-left: 100px;
+     background-color: transparent;
+     color: green;
+   }
+   .navbar-brand{
+     padding:13px 15px;
+   }
+/* Portrait & landscape phone */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+  #searchText{
+    width:100px;
+    margin-left: 10px;
+  }
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+/*End */
+
+/*Graph Style*/
+.svg text{
+    fill: #ffb348;
+}
+
+.axis {
+  font: 12px sans-serif;
+}
+.axis path,
+.axis line {
+  fill: white;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(51, 42, 33, 0.74);
+  color: #ff911b;
+  border-radius: 2px;
+}
+
+/* Creates triangle for tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(180, 21, 16, 0.98);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}

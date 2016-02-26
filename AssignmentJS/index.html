@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Website Title & Description for Search Engine purposes -->
+	<title>Agriculture Graph</title>
+	<meta name="description" content="">
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Bootstrap CSS -->
+    <link href="lib/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<link href="lib/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="lib/js/modernizr-2.6.2.min.js"></script>
+	<!--end -->
+    <!-- Custom CSS -->
+    <link href="includes/css/styles.css" rel="stylesheet">
+</head>
+<body onload="getChart('#tab1','jsonFile/oilSeeds.json','#B41510');
+getChart('#tab2','jsonFile/foodGrains.json','#6CFF7A');
+getChart('#tab3','jsonFile/commercialCrops.json','#B46419');
+getstackBar('#tab4','jsonFile/riceSouthernProduction.json');">
+	<div class="container" id="main">
+		<div class="navbar navbar-fixed-top" id="transparentNav">
+			<div class="container">
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="images/logo.png" class="img-responsive" alt="Logo"></a>
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">D3</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Location <strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Rice Production</a></li>
+								<li><a href="#">Wheat Production</a></li>
+								<li><a href="#">Maize Production</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+					</ul><!--end navbar ul-->
+					<form class="navbar-form pull-left">
+						<input type="text" class="form-control" placeholder="Search" id="searchText">
+						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+					</form><!--end navbar form-->
+					<ul class="nav navbar-nav pull-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"> My Account<strong class="caret"></strong></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><span class="glyphicon glyphicon-refresh"></span> Profile Update</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Setting</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--end collpase navbar-->
+			</div><!--end nav container -->
+		</div><!-- end navbar-->
+		<div class="row" id="moreInfo">
+			<div class="col-sm-12">
+				<h3>Agriculture production of different foodgrains from year 2003 to 2014 at all India level</h3>
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">Oilseed crop vs Production</a></li>
+						<li><a href="#tab2" data-toggle="tab">FoodGrains Vs Production</a></li>
+                        <li><a href="#tab3" data-toggle="tab">Aggregate all commercial crops vs Year</a></li>
+                        <li><a href="#tab4" data-toggle="tab">Rice production in the 4 southern states Vs Year</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+
+						</div><!-- first tab pan end-->
+						<div class="tab-pane" id="tab2">
+						</div><!--second tab pan end-->
+                        <div class="tab-pane" id="tab3">
+                        </div>
+                        <div class="tab-pane" id="tab4">
+                        </div>
+					</div><!--end tab content-->
+				</div><!--end tabbable-->
+			</div><!--end col 12-->
+		</div><!-- end moreInfo-->
+	</div><!--end container-->
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+	<!-- First the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="lib/js/jquery-1.8.2.min.js"><\/script>')</script>
+    <!-- D3 min js-->
+    <script src="lib/js/d3.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="lib/js/bootstrap.min.js"></script>
+    <!--toolTip-->
+    <script src="lib/js/d3.tip.v0.6.3.js"></script>
+    <!--chartGenerator js-->
+    <script src="includes/js/chartGenerator.js"></script>
+</body>
+</html>
